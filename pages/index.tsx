@@ -27,7 +27,7 @@ export default function Home() {
           <Text hero>Candy🍬Wrapper</Text>
           <Text center large topBase bottomSmall>Candy Wrapper is a boilerplate system to create new Next.js applications with some implemented tools like OCC Atomic and Apollo Client, configured to point to the CandysQL endpoint. It's working with Webpack 5 and Module Federation.</Text>
           {data && (
-            <pre><code>{JSON.stringify(data)}</code></pre>
+            <Text subheading strong info>{JSON.stringify(data)}</Text>
           )}
         </Flexbox>
       </Grid>
