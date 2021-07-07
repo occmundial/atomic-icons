@@ -1,3 +1,4 @@
+import Head from "next/head";
 import '../styles/globals.css'
 import { useEffect } from 'react'
 import type { AppProps } from 'next/app'
@@ -17,7 +18,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <ApolloProvider client={client}>
+    <ApolloProvider client={client}>
+      <Head>
+        <script src="http://localhost:3002/web/remoteEntry.js" />
+      </Head>
         <Component {...pageProps} />
       </ApolloProvider>
     </>
