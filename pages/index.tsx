@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { useQuery } from '@apollo/client'
 import { Text, Flexbox, Grid } from '@occmundial/occ-atomic'
 import { EXAMPLE_QUERY } from 'graphql/queries/example'
+import Shareable from '@/components/shareable'
 
 export default function Home() {
   const { data } = useQuery(EXAMPLE_QUERY)
@@ -27,6 +28,7 @@ export default function Home() {
           {data && (
             <Text subheading>{JSON.stringify(data)}</Text>
           )}
+          <Shareable />
         </Flexbox>
       </Grid>
     </div>
