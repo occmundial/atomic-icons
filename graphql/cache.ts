@@ -1,9 +1,9 @@
 import {
   InMemoryCache, ApolloCache, NormalizedCacheObject
-} from '@apollo/client';
+} from '@apollo/client'
 import {
   helloVar
-} from './state';
+} from './state'
 
 const cache: ApolloCache<NormalizedCacheObject> = new InMemoryCache({
   typePolicies: {
@@ -15,6 +15,6 @@ const cache: ApolloCache<NormalizedCacheObject> = new InMemoryCache({
       }
     }
   }
-});
+})
 
-export default cache;
+export default cache

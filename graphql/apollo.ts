@@ -1,24 +1,26 @@
 /* eslint-disable no-underscore-dangle */
 import {
-  ApolloClient, NormalizedCacheObject
-} from '@apollo/client';
-import { createPersistedQueryLink } from '@apollo/client/link/persisted-queries';
-import { HttpLink } from '@apollo/client/link/http';
-import { sha256 } from 'crypto-hash';
-import { useMemo } from 'react';
+  ApolloClient, ApolloLink, NormalizedCacheObject
+} from '@apollo/client'
+import { createPersistedQueryLink } from '@apollo/client/link/persisted-queries'
+import { HttpLink } from '@apollo/client/link/http'
+import { sha256 } from 'crypto-hash'
+import { useMemo } from 'react'
 
-import cache from './cache';
-import schema from './schema';
-import { CANDYSQL } from '../config';
+import cache from './cache'
+import schema from './schema'
+import { CANDYSQL } from '../config'
 
-let apolloClient: ApolloClient<NormalizedCacheObject>;
+type ApolloClientType = ApolloClient<NormalizedCacheObject>
 
-const linkChain: any = createPersistedQueryLink({
+let apolloClient: ApolloClientType
+
+const linkChain: ApolloLink = createPersistedQueryLink({
   sha256,
   useGETForHashedQueries: true
-}).concat(new HttpLink({ uri: CANDYSQL }));
+}).concat(new HttpLink({ uri: CANDYSQL }))
 
-function createApolloClient(): any {
+function createApolloClient(): ApolloClientType {
   return new ApolloClient({
     ssrMode: typeof window === 'undefined',
     name: 'candy-wrapper',
@@ -26,21 +28,21 @@ function createApolloClient(): any {
     link: linkChain,
     cache,
     typeDefs: schema
-  });
+  })
 }
 
-export function initializeApollo(initialState: any = null): any {
-  const _apolloClient: any = apolloClient ?? createApolloClient();
+export function initializeApollo(initialState: NormalizedCacheObject = null): ApolloClientType {
+  const _apolloClient: ApolloClientType = apolloClient ?? createApolloClient()
   if (initialState) {
-    _apolloClient.cache.restore(initialState);
+    _apolloClient.cache.restore(initialState)
   }
-  if (typeof window === 'undefined') return _apolloClient;
-  apolloClient = apolloClient ?? _apolloClient;
+  if (typeof window === 'undefined') return _apolloClient
+  apolloClient = apolloClient ?? _apolloClient
 
-  return apolloClient;
+  return apolloClient
 }
 
-export function useApollo(initialState: any = null): any {
-  const store: any = useMemo(() => initializeApollo(initialState), [initialState]);
-  return store;
+export function useApollo(initialState: NormalizedCacheObject = null): ApolloClientType {
+  const store: any = useMemo(() => initializeApollo(initialState), [initialState])
+  return store
 }

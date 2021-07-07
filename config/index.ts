@@ -1,1 +1,1 @@
-export const CANDYSQL = 'https://candysql.occdev.com.mx';
+export const CANDYSQL = 'https://candysql.occdev.com.mx'

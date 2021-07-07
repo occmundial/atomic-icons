@@ -1,3 +1,3 @@
-import { makeVar, ReactiveVar } from '@apollo/client';
+import { makeVar, ReactiveVar } from '@apollo/client'
 
-export const helloVar: ReactiveVar<string> = makeVar('world');
+export const helloVar: ReactiveVar<string> = makeVar('world')
