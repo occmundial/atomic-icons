@@ -30,7 +30,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="es">
+      <Html lang="en">
         <Head>
           <meta charSet="utf-8" />
           {this.props.styles}
