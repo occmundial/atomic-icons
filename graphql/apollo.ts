@@ -1,4 +1,3 @@
-/* eslint-disable no-underscore-dangle */
 import {
   ApolloClient, ApolloLink, NormalizedCacheObject
 } from '@apollo/client'

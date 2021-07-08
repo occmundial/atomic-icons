@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import Head from 'next/head'
 import { useQuery } from '@apollo/client'
 import { Text, Flexbox, Grid, Card } from '@occmundial/occ-atomic'
