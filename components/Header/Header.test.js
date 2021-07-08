@@ -1,4 +1,4 @@
-import { render, screen, act } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import Header from './'
 
 describe('Header', () => {
@@ -6,11 +6,9 @@ describe('Header', () => {
         const component = render(<Header />)
         expect(component.asFragment()).toMatchSnapshot()
     })
-    it('Renders the candy 🍬', async () => {
-        await act(() => {
-            render(<Header />)
-            const element = screen.getByText('🍬')
-            expect(element).toBeInTheDocument()
-        })
+    it('Renders the candy 🍬', () => {
+        render(<Header />)
+        const element = screen.getByText('🍬')
+        expect(element).toBeInTheDocument()
     })
 })
