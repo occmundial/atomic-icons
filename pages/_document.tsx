@@ -1,7 +1,9 @@
+/* eslint-disable @next/next/no-sync-scripts */
 import Document, {
   Head, Main, NextScript, Html, DocumentContext
 } from 'next/document'
 import { SheetsRegistry, JssProvider } from 'react-jss'
+import { patchSharing } from "@module-federation/nextjs-mf";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -31,6 +33,9 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
+        {patchSharing()}
+        {/* <script src="http://localhost:3001/_next/static/chunks/webpack.js" />
+        <script src="http://localhost:3001/_next/static/runtime/remoteEntry.js" /> */}
         <Head>
           <meta charSet="utf-8" />
           {this.props.styles}
