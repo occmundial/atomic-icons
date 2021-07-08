@@ -6,7 +6,8 @@
     "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest --silent"
   },
   "dependencies": {
     "@apollo/client": "^3.3.21",
@@ -19,10 +20,18 @@
     "react-jss": "8.6.0"
   },
   "devDependencies": {
+    "@testing-library/dom": "^8.1.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.1.9",
+    "@types/babel__core": "^7.1.15",
+    "@types/node": "^16.0.1",
     "@types/react": "17.0.13",
+    "babel-jest": "^27.0.6",
     "cross-env": "^7.0.3",
     "eslint": "7.30.0",
     "eslint-config-next": "11.0.1",
+    "jest": "^27.0.6",
     "ts-node": "^10.0.0",
     "typescript": "4.3.5"
   }

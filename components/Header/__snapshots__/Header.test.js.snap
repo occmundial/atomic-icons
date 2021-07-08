@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="WindowSize-container-0-1-1 WindowSize-fixed-0-1-2 WindowSize-show-0-1-4"
+  >
+    <div
+      class="WindowSize-nav-0-1-7 WindowSize-white-0-1-11"
+    >
+      <div
+        class="Grid-conFluid-0-1-22 WindowSize-grid-0-1-8"
+      >
+        <div
+          class="Flexbox-flex-0-1-24 Flexbox-jbetween-0-1-36 Flexbox-acenter-0-1-41 WindowSize-tab-0-1-9"
+        >
+          <div
+            class="Flexbox-flex-0-1-24 Flexbox-acenter-0-1-41 WindowSize-left-0-1-12"
+          >
+            <div>
+              <p
+                class="Text-text-0-1-56 Text-headline-0-1-58 Text-highEmphasis-0-1-76"
+              >
+                <a
+                  href="/"
+                  style="text-decoration: none;"
+                >
+                  🍬
+                </a>
+              </p>
+            </div>
+          </div>
+          <div
+            class=""
+            style="flex: 1;"
+          />
+          <div
+            class="Flexbox-flex-0-1-24 Flexbox-acenter-0-1-41 WindowSize-right-0-1-13"
+          >
+            <a
+              class="NavItem-link-0-1-96 WindowSize-navItem-0-1-16"
+              href="https://github.com/occmundial/candy-wrapper"
+            >
+              <span
+                class="Text-text-0-1-56 Text-standard-0-1-63 Text-highEmphasis-0-1-76 NavItem-text-0-1-97"
+              >
+                Github
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
