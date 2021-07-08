@@ -7,7 +7,7 @@ const left: { [key: string]: string | ReactElement }[] = [
         key: '1',
         type: 'custom',
         custom: (
-            <Text headline tag="a">
+            <Text headline>
                 <Link href="/">
                     <a style={{ textDecoration: 'none' }}>🍬</a>
                 </Link>

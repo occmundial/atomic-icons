@@ -9,7 +9,6 @@ import { useMemo } from 'react'
 
 import cache from './cache'
 import schema from './schema'
-import { CANDYSQL } from '../config'
 
 type ApolloClientType = ApolloClient<NormalizedCacheObject>
 
@@ -18,7 +17,7 @@ let apolloClient: ApolloClientType
 const linkChain: ApolloLink = createPersistedQueryLink({
   sha256,
   useGETForHashedQueries: true
-}).concat(new HttpLink({ uri: CANDYSQL }))
+}).concat(new HttpLink({ uri: process.env.NEXT_PUBLIC_CANDYSQL }))
 
 function createApolloClient(): ApolloClientType {
   return new ApolloClient({
