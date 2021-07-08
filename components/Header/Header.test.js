@@ -9,8 +9,7 @@ describe('Header', () => {
     it('Renders the candy 🍬', async () => {
         await act(() => {
             render(<Header />)
-            const element = screen.getByText('🍬');
-            console.log(element)
+            const element = screen.getByText('🍬')
             expect(element).toBeInTheDocument()
         })
     })
