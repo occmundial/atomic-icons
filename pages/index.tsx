@@ -3,6 +3,8 @@ import Head from 'next/head'
 import { useQuery } from '@apollo/client'
 import { Text, Flexbox, Grid, Card } from '@occmundial/occ-atomic'
 import { EXAMPLE_QUERY } from 'graphql/queries/example'
+
+import Header from '@/components/Header'
 import { initializeApollo } from '@/graphql/apollo'
 
 export default function Home() {
@@ -14,6 +16,7 @@ export default function Home() {
       <Head>
         <title>Candy🍬Wrapper</title>
       </Head>
+      <Header />
       <Grid>
         <Flexbox
           display="flex"
