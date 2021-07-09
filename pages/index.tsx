@@ -7,49 +7,59 @@ import Header from '@/components/Header'
 import { initializeApollo } from '@/graphql/apollo'
 
 export default function Home() {
-  // This query does not make a new request on the client
-  const { data } = useQuery(EXAMPLE_QUERY)
+	// This query does not make a new request on the client
+	const { data } = useQuery(EXAMPLE_QUERY)
 
-  return (
-    <div>
-      <Head>
-        <title>Candy🍬Wrapper</title>
-      </Head>
-      <Header />
-      <Grid>
-        <Flexbox
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-          direction="col"
-          style={{
-            height: '100vh'
-          }}
-        >
-          <Card raisable>
-            <Text center hero secondary>Candy🍬Wrapper</Text>
-            <Text center large topBase bottomSmall><strong>Candy🍬Wrapper</strong> is a boilerplate system to create new Next.js applications with some implemented tools like OCC Atomic and Apollo Client, configured to point to the CandysQL endpoint and working with server-side rendering. It's working with Webpack 5 and Module Federation.</Text>
-            {data && (
-              <Text center subheading strong info>{JSON.stringify(data)}</Text>
-            )}
-          </Card>
-        </Flexbox>
-      </Grid>
-    </div>
-  )
+	return (
+		<div>
+			<Head>
+				<title>Candy🍬Wrapper</title>
+			</Head>
+			<Header />
+			<Grid>
+				<Flexbox
+					display="flex"
+					justifyContent="center"
+					alignItems="center"
+					direction="col"
+					style={{
+						height: '100vh'
+					}}
+				>
+					<Card raisable>
+						<Text center hero secondary>
+							Candy🍬Wrapper
+						</Text>
+						<Text center large topBase bottomSmall>
+							<strong>Candy🍬Wrapper</strong> is a boilerplate system to create
+							new Next.js applications with some implemented tools like OCC
+							Atomic and Apollo Client, configured to point to the CandysQL
+							endpoint and working with server-side rendering. It's working with
+							Webpack 5 and Module Federation.
+						</Text>
+						{data && (
+							<Text center subheading strong info>
+								{JSON.stringify(data)}
+							</Text>
+						)}
+					</Card>
+				</Flexbox>
+			</Grid>
+		</div>
+	)
 }
 
 // Example to retrieve GraphQL data in SSR
 export async function getStaticProps() {
-  const apolloClient = initializeApollo()
+	const apolloClient = initializeApollo()
 
-  await apolloClient.query({
-    query: EXAMPLE_QUERY
-  })
+	await apolloClient.query({
+		query: EXAMPLE_QUERY
+	})
 
-  return {
-    props: {
-      initializeApollo: apolloClient.cache.extract()
-    }
-  }
+	return {
+		props: {
+			initializeApollo: apolloClient.cache.extract()
+		}
+	}
 }
