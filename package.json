@@ -9,7 +9,7 @@
     "lint": "next lint",
     "test": "jest --silent",
     "prepare": "husky install",
-    "pre-commit": "lint-staged"
+    "pre-commit": "lint-staged && pretty-quick --staged"
   },
   "dependencies": {
     "@apollo/client": "^3.3.21",
