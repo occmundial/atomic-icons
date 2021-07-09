@@ -1,6 +1,6 @@
 import { ReactElement } from 'react'
 import Link from 'next/link'
-import { NavTab, Text, Icon } from '@occmundial/occ-atomic'
+import { NavTab, Text } from '@occmundial/occ-atomic'
 
 const left: { [key: string]: string | ReactElement }[] = [
     {
