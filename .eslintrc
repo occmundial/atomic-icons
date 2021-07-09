@@ -7,7 +7,7 @@
 		"prettier/prettier": [
 			"error",
 			{
-				"useTabs": true,
+				"useTabs": false,
 				"tabSize": 2,
 				"semi": false,
 				"singleQuote": true,
