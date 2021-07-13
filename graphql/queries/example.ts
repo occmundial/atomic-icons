@@ -1,6 +1,7 @@
-import { DocumentNode, gql } from '@apollo/client'
+import { DocumentNode, gql } from "@apollo/client";
 
 export const EXAMPLE_QUERY: DocumentNode = gql`
-query ExampleQuery {
+  query ExampleQuery {
     hello @client
-}`
+  }
+`;
