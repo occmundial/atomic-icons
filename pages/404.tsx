@@ -1,6 +1,14 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import { Flexbox, Text, Card, Icon, Grid, colors, iconSizes } from '@occmundial/occ-atomic'
+import {
+  Flexbox,
+  Text,
+  Card,
+  Icon,
+  Grid,
+  colors,
+  iconSizes
+} from '@occmundial/occ-atomic'
 
 import Header from '@/components/Header'
 
@@ -25,8 +33,18 @@ export default function NotFound() {
           }}
         >
           <Card raisable>
-            <Text center hero secondary><Icon iconName="warning" colors={[colors.sec]} width={medium} height={medium} /> 404</Text>
-            <Text>There's no page <strong>{router.asPath}</strong></Text>
+            <Text center hero secondary>
+              <Icon
+                iconName="warning"
+                colors={[colors.sec]}
+                width={medium}
+                height={medium}
+              />{' '}
+              404
+            </Text>
+            <Text>
+              There's no page <strong>{router.asPath}</strong>
+            </Text>
           </Card>
         </Flexbox>
       </Grid>

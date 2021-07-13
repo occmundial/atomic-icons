@@ -27,10 +27,20 @@ export default function Home() {
           }}
         >
           <Card raisable>
-            <Text center hero secondary>Candy🍬Wrapper</Text>
-            <Text center large topBase bottomSmall><strong>Candy🍬Wrapper</strong> is a boilerplate system to create new Next.js applications with some implemented tools like OCC Atomic and Apollo Client, configured to point to the CandysQL endpoint and working with server-side rendering. It's working with Webpack 5 and Module Federation.</Text>
+            <Text center hero secondary>
+              Candy🍬Wrapper
+            </Text>
+            <Text center large topBase bottomSmall>
+              <strong>Candy🍬Wrapper</strong> is a boilerplate system to create
+              new Next.js applications with some implemented tools like OCC
+              Atomic and Apollo Client, configured to point to the CandysQL
+              endpoint and working with server-side rendering. It's working with
+              Webpack 5 and Module Federation.
+            </Text>
             {data && (
-              <Text center subheading strong info>{JSON.stringify(data)}</Text>
+              <Text center subheading strong info>
+                {JSON.stringify(data)}
+              </Text>
             )}
           </Card>
         </Flexbox>
