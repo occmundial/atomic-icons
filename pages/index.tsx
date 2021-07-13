@@ -5,10 +5,11 @@ import { EXAMPLE_QUERY } from 'graphql/queries/example'
 
 import Header from '@/components/Header'
 import { initializeApollo } from '@/graphql/apollo'
+import { ExampleQuery } from '@/graphql/types/ExampleQuery'
 
 export default function Home() {
   // This query does not make a new request on the client
-  const { data } = useQuery(EXAMPLE_QUERY)
+  const { data } = useQuery<ExampleQuery>(EXAMPLE_QUERY)
 
   return (
     <div>
