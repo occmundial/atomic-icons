@@ -3,25 +3,25 @@ import Document, {
   Main,
   NextScript,
   Html,
-  DocumentContext,
-} from "next/document";
-import { SheetsRegistry, JssProvider } from "react-jss";
+  DocumentContext
+} from 'next/document'
+import { SheetsRegistry, JssProvider } from 'react-jss'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
-    const registry = new SheetsRegistry();
-    const originalRenderPage = ctx.renderPage;
+    const registry = new SheetsRegistry()
+    const originalRenderPage = ctx.renderPage
     ctx.renderPage = () =>
       originalRenderPage({
-        enhanceApp: (App) => (props) =>
+        enhanceApp: App => props =>
           (
             <JssProvider registry={registry}>
               <App {...props} />
             </JssProvider>
-          ),
-      });
+          )
+      })
 
-    const initialProps = await Document.getInitialProps(ctx);
+    const initialProps = await Document.getInitialProps(ctx)
     return {
       ...initialProps,
       styles: (
@@ -29,8 +29,8 @@ class MyDocument extends Document {
           {initialProps.styles}
           <style id="server-side-styles">{registry.toString()}</style>
         </>
-      ),
-    };
+      )
+    }
   }
 
   render() {
@@ -55,8 +55,8 @@ class MyDocument extends Document {
           <NextScript />
         </body>
       </Html>
-    );
+    )
   }
 }
 
-export default MyDocument;
+export default MyDocument
