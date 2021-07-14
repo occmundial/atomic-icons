@@ -9,7 +9,9 @@
     "lint": "next lint",
     "test": "jest --silent",
     "postinstall": "husky install",
-    "pre-commit": "lint-staged && pretty-quick --staged"
+    "pre-commit": "lint-staged",
+    "download-schema": "rover graph introspect https://candysql.occdev.com.mx > graphql/schema/candysql.graphql",
+    "codegen": "apollo codegen:generate ./graphql/types --target=typescript --outputFlat"
   },
   "dependencies": {
     "@apollo/client": "^3.3.21",
@@ -22,6 +24,7 @@
     "react-jss": "8.6.0"
   },
   "devDependencies": {
+    "@apollo/rover": "^0.1.8",
     "@testing-library/dom": "^8.1.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
@@ -29,6 +32,7 @@
     "@types/babel__core": "^7.1.15",
     "@types/node": "^16.0.1",
     "@types/react": "17.0.13",
+    "apollo": "^2.33.4",
     "babel-jest": "^27.0.6",
     "cross-env": "^7.0.3",
     "eslint": "7.30.0",
@@ -39,7 +43,6 @@
     "jest": "^27.0.6",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.2",
-    "pretty-quick": "^3.1.1",
     "ts-node": "^10.0.0",
     "typescript": "4.3.5"
   },

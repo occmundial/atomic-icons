@@ -5,7 +5,7 @@ import { sha256 } from 'crypto-hash'
 import { useMemo } from 'react'
 
 import cache from './cache'
-import schema from './schema'
+import schema from './schema/local.graphql'
 
 type ApolloClientType = ApolloClient<NormalizedCacheObject>
 
@@ -43,7 +43,7 @@ export function initializeApollo(
 export function useApollo(
   initialState: NormalizedCacheObject = null
 ): ApolloClientType {
-  const store: any = useMemo(
+  const store: ApolloClientType = useMemo(
     () => initializeApollo(initialState),
     [initialState]
   )
