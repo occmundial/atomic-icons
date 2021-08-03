@@ -1,5 +1,11 @@
-import { ApolloClient, ApolloLink, NormalizedCacheObject } from '@apollo/client'
+import {
+  ApolloClient,
+  ApolloLink,
+  Context,
+  NormalizedCacheObject
+} from '@apollo/client'
 import { createPersistedQueryLink } from '@apollo/client/link/persisted-queries'
+import { setContext } from '@apollo/client/link/context'
 import { HttpLink } from '@apollo/client/link/http'
 import { sha256 } from 'crypto-hash'
 import { useMemo } from 'react'
@@ -11,6 +17,13 @@ type ApolloClientType = ApolloClient<NormalizedCacheObject>
 
 let apolloClient: ApolloClientType
 
+const authLink: Context = setContext((_: Context, { headers }) => ({
+  headers: {
+    ...headers
+    // Add any custom headers you need here (e.g. authorization header)
+  }
+}))
+
 const linkChain: ApolloLink = createPersistedQueryLink({
   sha256,
   useGETForHashedQueries: true
@@ -21,7 +34,7 @@ function createApolloClient(): ApolloClientType {
     ssrMode: typeof window === 'undefined',
     name: 'candy-wrapper',
     version: process.env.NEXT_PUBLIC_VERSION || 'local',
-    link: linkChain,
+    link: authLink.concat(linkChain),
     cache,
     typeDefs: schema
   })
