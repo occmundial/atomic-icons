@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <mask id="bz030998ga">
+        <rect width="20" height="12" x="2" y="9.5" rx="1.5" />
+    </mask>
+    <rect width="20" height="12" x="2" y="9.5" stroke-width="4" mask="url(#bz030998ga)" rx="1.5" />
+    <path stroke-width="2" d="M4 7h16M6 3.5h12" />
+</svg>
