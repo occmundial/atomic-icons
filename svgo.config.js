@@ -9,10 +9,7 @@ module.exports = {
   plugins: extendDefaultPlugins([
     {
       name: 'prefixIds',
-      active: true,
-      options: {
-        prefix: 'atomic-'
-      }
+      active: true
     },
     {
       name: 'cleanupIDs',
