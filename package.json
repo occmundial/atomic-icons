@@ -11,8 +11,8 @@
     "postinstall": "husky install",
     "pre-commit": "lint-staged",
     "prebuild:sprite": "rimraf dist && mkdirp dist",
-    "build:sprite": "svg-sprite-generate -d ./icons -o ./dist/atomic",
-    "postbuild:sprite": "svgo dist/atomic -o dist/atomic-icons.svg && rimraf dist/atomic"
+    "build:sprite": "svg-sprite-generate -d ./icons -o ./dist/sprite.svg",
+    "postbuild:sprite": "svgo dist/sprite.svg -o dist/atomic-icons.svg && rimraf dist/sprite.svg"
   },
   "dependencies": {
     "@occmundial/occ-atomic": "^1.15.6",

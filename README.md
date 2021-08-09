@@ -1,3 +1,3 @@
-# Candy:candy:Wrapper
+# Atomic Icons
 
-Candy:candy:Wrapper is a boilerplate system to create new Next.js applications with some implemented tools like OCC Atomic and Apollo Client, configured to point to the CandysQL endpoint and working with server-side rendering. It's working with Webpack 5 and Module Federation.
+**Atomic Icons** library. This project is part of the **Atomic UI**.
