@@ -16,8 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@/components/*": ["components/*"],
-      "@/config/*": ["config/*"],
-      "@/graphql/*": ["graphql/*"]
+      "@/icons/*": ["icons/*"],
+      "@/scripts/*": ["scripts/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "./jest.setup.ts"],
