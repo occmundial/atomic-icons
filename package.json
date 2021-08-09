@@ -1,5 +1,5 @@
 {
-  "name": "candy-wrapper",
+  "name": "atomic-icons",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,7 +12,7 @@
     "pre-commit": "lint-staged",
     "prebuild:sprite": "rimraf dist && mkdirp dist",
     "build:sprite": "svg-sprite-generate -d ./icons -o ./dist/atomic",
-    "postbuild:sprite": "svgo dist/atomic -o dist/atomic.svg && rimraf dist/atomic"
+    "postbuild:sprite": "svgo dist/atomic -o dist/atomic-icons.svg && rimraf dist/atomic"
   },
   "dependencies": {
     "@occmundial/occ-atomic": "^1.15.6",
