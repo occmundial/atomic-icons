@@ -2,24 +2,32 @@
   "branches": [
     "main"
   ],
-  "dryRun": true,
-  "ci": false,
-  "debug": true,
+  "dryRun": false,
+  "ci": true,
+  "debug": false,
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
-    "@semantic-release/github",
+    [
+      "@semantic-release/github",
+      {
+        "assets": [
+          "dist/atomic-icons.svg"
+        ]
+      }
+    ],
     [
       "@semantic-release/exec",
       {
-        "publishCmd": ""
+        "prepareCmd": "npx rjp package.json version ${nextRelease.version}",
+        "publishCmd": "npx ts-node --project tsconfig.ci.json scripts/uploadSprite.ts ${nextRelease.version}"
       }
     ],
     [
       "@semantic-release/git",
       {
-        "message": "Release <%= nextRelease.version %> [skip ci]",
+        "message": "ci: release <%= nextRelease.version %> [skip ci]",
         "assets": [
           "package.json",
           "CHANGELOG.md"
