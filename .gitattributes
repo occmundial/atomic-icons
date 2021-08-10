@@ -1,0 +1,19 @@
+# nextjs content
+pages                   export-ignore
+components              export-ignore
+styles                  export-ignore
+next-env.d.ts           export-ignore
+next.config.js          export-ignore
+tsconfig.json           export-ignore
+# jest
+jest.config.js          export-ignore
+jest.setup.ts           export-ignore
+# misc
+.github                 export-ignore
+.whitesource            export-ignore
+.gitignore              export-ignore
+.gitattributes          export-ignore
+.husky                  export-ignore
+.babelrc                export-ignore
+.releaserc.json         export-ignore
+commitlint.config.js    export-ignore
