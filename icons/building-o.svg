@@ -1,4 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-    <path stroke-width="2" d="M18 21V4c0-.552-.449-1-1.001-1H7C6.45 3 6 3.448 6 4v17M3 21h18M6 7h12M6 12h12" />
-    <path stroke-width="2" d="M11 19v-2h2v2h-2z" />
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 21V4C18 3.44772 17.5511 3 16.9988 3C13.2402 3 10.7598 3 7.00116 3C6.44888 3 6 3.44772 6 4V21"
+        stroke="#222222" stroke-width="2" />
+    <path d="M3 21H21" stroke="#222222" stroke-width="2" />
+    <path d="M6 7H18" stroke="#222222" stroke-width="2" />
+    <path d="M6 12H18" stroke="#222222" stroke-width="2" />
+    <path d="M11 19V17H13V19H11Z" fill="#222222" stroke="#222222" stroke-width="2" />
 </svg>

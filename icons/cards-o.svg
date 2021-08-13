@@ -1,7 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-    <mask id="bz030998ga">
-        <rect width="20" height="12" x="2" y="9.5" rx="1.5" />
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <mask id="path-1-inside-1" fill="white">
+        <rect x="2" y="9.5" width="20" height="12" rx="1.5" />
     </mask>
-    <rect width="20" height="12" x="2" y="9.5" stroke-width="4" mask="url(#bz030998ga)" rx="1.5" />
-    <path stroke-width="2" d="M4 7h16M6 3.5h12" />
+    <rect x="2" y="9.5" width="20" height="12" rx="1.5" stroke="#222222" stroke-width="4"
+        mask="url(#path-1-inside-1)" />
+    <path d="M4 7H20" stroke="#222222" stroke-width="2" />
+    <path d="M6 3.5H18" stroke="#222222" stroke-width="2" />
 </svg>
