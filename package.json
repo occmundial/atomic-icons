@@ -6,7 +6,7 @@
     "dev": "cross-env NODE_OPTIONS='--inspect' next dev -p 3002",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --dir scripts",
+    "lint": "next lint --dir scripts --dir pages --dir components",
     "test": "jest --silent",
     "postinstall": "husky install",
     "pre-commit": "lint-staged",
