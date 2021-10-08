@@ -1,8 +1,11 @@
-<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M18 21V4C18 3.44772 17.5511 3 16.9988 3C13.2402 3 10.7598 3 7.00116 3C6.44888 3 6 3.44772 6 4V21"
-        stroke="#222222" stroke-width="2" />
-    <path d="M3 21H21" stroke="#222222" stroke-width="2" />
-    <path d="M6 7H18" stroke="#222222" stroke-width="2" />
-    <path d="M6 12H18" stroke="#222222" stroke-width="2" />
-    <path d="M11 19V17H13V19H11Z" fill="#222222" stroke="#222222" stroke-width="2" />
+<svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <mask id="a">
+        <path fill-rule="evenodd"
+            d="M5 4c0-1.106.898-2 2.001-2H17C18.102 2 19 2.894 19 4v16h2v2H3v-2h2V4zm12 4v3H7V8h10zM7 13h10v7h-3v-3.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V20H7v-7zm10-7V4H7v2h10z" />
+    </mask>
+    <path fill-rule="evenodd"
+        d="M5 4c0-1.106.898-2 2.001-2H17C18.102 2 19 2.894 19 4v16h2v2H3v-2h2V4zm12 4v3H7V8h10zM7 13h10v7h-3v-3.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V20H7v-7zm10-7V4H7v2h10z" />
+    <path
+        d="M19 20h-2v2h2v-2zm2 0h2v-2h-2v2zm0 2v2h2v-2h-2zM3 22H1v2h2v-2zm0-2v-2H1v2h2zm2 0v2h2v-2H5zm12-9v2h2v-2h-2zm0-3h2V6h-2v2zM7 11H5v2h2v-2zm0-3V6H5v2h2zm10 5h2v-2h-2v2zM7 13v-2H5v2h2zm10 7v2h2v-2h-2zm-3 0h-2v2h2v-2zm-4 0v2h2v-2h-2zm-3 0H5v2h2v-2zM17 4h2v-.828l-.586-.586L17 4.001zm0 2v2h2V6h-2zm0-2 1.414-1.414-.038-.038-.04-.035L17 4zm0 0 1.336-1.488-.56-.502-.75-.01-.027 2zm-.001 0 .026-2H17v2zM7 4V2h-.026L7 4zm0 0-.027-2-.751.01-.559.502L7.001 4zM7 4 5.663 2.514l-.046.041-.043.044L7 4.001zm0 0L5.574 2.6 5 3.182v.819h2zm0 2H5v2h2V6zm.001-6A4.001 4.001 0 0 0 3 4h4v-.002l-.001.003c0 .002 0 .001 0 0l.002-.002L7 4h.002V0zM17 0H7v4H17V0zM21 4c0-2.214-1.797-4-4.001-4v4H17h-.002H17l.001.001L17 3.998V4h4zm0 16V4h-4v16h4zm0-2h-2v4h2v-4zm2 4v-2h-4v2h4zM3 24h18v-4H3v4zm-2-4v2h4v-2H1zm4-2H3v4h2v-4zM3 4v16h4V4H3zm16 7V8h-4v3h4zM7 13h10V9H7v4zM5 8v3h4V8H5zm12-2H7v4h10V6zm0 5H7v4h10v-4zm2 9v-7h-4v7h4zm-5 2h3v-4h-3v4zm-2-5.5V20h4v-3.5h-4zm1.5 1.5a1.5 1.5 0 0 1-1.5-1.5h4a2.5 2.5 0 0 0-2.5-2.5v4zm-3 0h3v-4h-3v4zm1.5-1.5a1.5 1.5 0 0 1-1.5 1.5v-4A2.5 2.5 0 0 0 8 16.5h4zm0 3.5v-3.5H8V20h4zm-5 2h3v-4H7v4zm-2-9v7h4v-7H5zm10-9v2h4V4h-4zm.586 1.415 2.828-2.829-2.828 2.829zm.077.073 2.673-2.975v-.001l-2.673 2.976zm1.31.512.053-4-.053 4zM7 6H17V2H7v4zm.026 0-.052-4 .052 4zm1.31-.512L5.664 2.512l2.673 2.976zm.09-.085L5.573 2.598l2.852 2.805zM9 6V4H5v2h4zm8-2H7v4h10V4z"
+        mask="url(#a)" />
 </svg>
