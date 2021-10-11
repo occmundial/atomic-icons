@@ -13,6 +13,8 @@
     "prebuild:sprite": "rimraf dist && mkdirp dist",
     "build:sprite": "svg-sprite-generate -d ./icons -o ./dist/sprite.svg",
     "postbuild:sprite": "svgo dist/sprite.svg -o dist/atomic-icons.svg && rimraf dist/sprite.svg",
+    "predeploy": "next build && next export",
+    "deploy": "ts-node --project tsconfig.ci.json scripts/deploy.ts",
     "semantic-release": "semantic-release"
   },
   "dependencies": {
@@ -42,6 +44,7 @@
     "eslint-config-next": "11.0.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
+    "gh-pages": "^3.2.3",
     "husky": "^7.0.1",
     "jest": "^27.0.6",
     "lint-staged": "^11.0.0",
