@@ -20,7 +20,7 @@ const right = [
     key: '2',
     type: 'link',
     text: 'Github',
-    link: 'https://github.com/occmundial/candy-wrapper'
+    link: 'https://github.com/occmundial/atomic-icons'
   }
 ]
 
