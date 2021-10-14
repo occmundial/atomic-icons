@@ -1,3 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-    <path stroke-linejoin="round" stroke-width="2.5" d="M7.704 20.006l8.003-8.003L7.704 4" />
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <path
+        d="M16.59 12.887L8.589 20.89 6.82 19.122l7.12-7.119-7.12-7.12 1.768-1.767 8.003 8.003c.234.235.366.553.366.884 0 .332-.132.65-.366.884z" />
 </svg>
