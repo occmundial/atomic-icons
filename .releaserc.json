@@ -20,7 +20,7 @@
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "npx rjp package.json version ${nextRelease.version}",
+        "prepareCmd": "npx rjp package.json version ${nextRelease.version} && npx ts-node --project tsconfig.ci.json scripts/saveVersion.ts ${nextRelease.version}",
         "publishCmd": "npx ts-node --project tsconfig.ci.json scripts/uploadSprite.ts ${nextRelease.version}"
       }
     ],
@@ -30,7 +30,8 @@
         "message": "ci: Release <%= nextRelease.version %> [skip ci]",
         "assets": [
           "package.json",
-          "CHANGELOG.md"
+          "CHANGELOG.md",
+          ".env"
         ]
       }
     ]
