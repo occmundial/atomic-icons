@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const loadSprite = async () => {
     try {
       const res = await axios.get<string>(
-        `https://cdn-icons-occ.occ.com.mx/atomic-icons-${process.env.NEXT_PUBLIC_VERSION}.svg`
+        `https://cdn-icons.occ.com.mx/atomic-icons-${process.env.NEXT_PUBLIC_VERSION}.svg`
       )
       const div = document.createElement('div')
       div.style.display = 'none'
