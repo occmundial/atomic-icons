@@ -50,6 +50,7 @@
     "replace-json-property": "^1.6.3",
     "rimraf": "^3.0.2",
     "semantic-release": "^17.4.4",
+    "semantic-release-slack-bot": "^2.1.1",
     "svg-sprite-generator": "^0.0.7",
     "svgo": "^2.3.1",
     "ts-node": "^10.0.0",
