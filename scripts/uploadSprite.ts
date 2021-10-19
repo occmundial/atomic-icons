@@ -18,7 +18,7 @@ const fileStream = fs.createReadStream(
 )
 
 uploadParams.Body = fileStream
-uploadParams.Key = `icons/${version}/atomic-icons.svg`
+uploadParams.Key = `atomic-icons-${version}.svg`
 
 s3.upload(uploadParams, function (err, data) {
   if (err) {
