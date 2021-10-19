@@ -1,4 +1,5 @@
 # Atomic Icons
+![Release](https://badge.fury.io/gh/occmundial%2Fatomic-icons.svg)
 
 **Atomic Icons** library. This project is part of the **Atomic UI**.
 
