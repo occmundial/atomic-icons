@@ -34,6 +34,14 @@
           ".env"
         ]
       }
+    ],
+    [
+      "semantic-release-slack-bot",
+      {
+        "notifyOnSuccess": true,
+        "notifyOnFail": true,
+        "markdownReleaseNotes": "<%= nextRelease.notes %>"
+      }
     ]
   ]
 }
