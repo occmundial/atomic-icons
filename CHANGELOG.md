@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/occmundial/atomic-icons/compare/v1.0.0...v1.1.0) (2022-01-26)
+
+
+### Features
+
+* Add match-job icon ([166f150](https://github.com/occmundial/atomic-icons/commit/166f15045e4a9e2d8ad8bb01da494b8f7a5dbaf0))
+
 # 1.0.0 (2021-10-14)
 
 
