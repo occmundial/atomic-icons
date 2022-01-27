@@ -1,7 +1,8 @@
 import Link from 'next/link'
-import { NavTab, Text } from '@occmundial/occ-atomic'
+import { NavTab, Text } from '@occmundial/atomic/components'
+import { NavPosition } from '@occmundial/atomic/components/NavTab'
 
-const left = [
+const left: NavPosition = [
   {
     key: '1',
     type: 'custom',
@@ -15,7 +16,7 @@ const left = [
   }
 ]
 
-const right = [
+const right: NavPosition = [
   {
     key: '2',
     type: 'link',

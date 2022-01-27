@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import { useEffect } from 'react'
 import type { AppProps } from 'next/app'
-import axios from 'axios'
+import AtomicProvider from '@occmundial/atomic/components/Provider'
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -12,27 +12,15 @@ function MyApp({ Component, pageProps }: AppProps) {
     }
   }, [])
 
-  useEffect(() => {
-    loadSprite()
-  }, [])
-
-  const loadSprite = async () => {
-    try {
-      const res = await axios.get<string>(
-        `https://cdn-icons.occ.com.mx/atomic-icons-${process.env.NEXT_PUBLIC_VERSION}.svg`
-      )
-      const div = document.createElement('div')
-      div.style.display = 'none'
-      div.innerHTML = res.data
-      document.body.insertBefore(div, document.body.firstChild)
-    } catch (e) {
-      console.error(e)
-    }
-  }
-
   return (
     <>
-      <Component {...pageProps} />
+      <AtomicProvider
+        data={{
+          iconsUrl: `https://cdn-icons.occ.com.mx/atomic-icons-${process.env.NEXT_PUBLIC_VERSION}.svg`
+        }}
+      >
+        <Component {...pageProps} />
+      </AtomicProvider>
     </>
   )
 }
