@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import fs from 'fs'
-import { Text, Grid, Card, Flexbox, spacing } from '@occmundial/occ-atomic'
+import { Text, Grid, Card, Flexbox } from '@occmundial/atomic/components'
+import { spacing } from '@occmundial/atomic/tokens'
 
 import Header from '@/components/Header'
 import IconBox from '@/components/IconBox'

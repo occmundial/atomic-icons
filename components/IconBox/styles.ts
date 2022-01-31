@@ -1,6 +1,7 @@
-import { iconSizes, colors, spacing } from '@occmundial/occ-atomic'
+import { createUseStyles } from 'react-jss'
+import { colors, spacing } from '@occmundial/atomic/tokens'
 
-const styles = {
+const styles = createUseStyles({
   iconBox: {
     border: `1px solid ${colors.grey200}`,
     padding: spacing.small,
@@ -14,14 +15,9 @@ const styles = {
       fill: colors.secDarker
     }
   },
-  icon: {
-    width: iconSizes.base,
-    height: iconSizes.base,
-    fill: colors.sec
-  },
   tag: {
     marginTop: spacing.xTiny
   }
-}
+})
 
 export default styles

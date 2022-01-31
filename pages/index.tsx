@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Text, Flexbox, Grid, Card } from '@occmundial/occ-atomic'
+import { Text, Flexbox, Grid, Card } from '@occmundial/atomic/components'
 
 import Header from '@/components/Header'
 

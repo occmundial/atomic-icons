@@ -3,23 +3,23 @@
 exports[`Header Matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="WindowSize-container-0-1-1 WindowSize-fixed-0-1-2 WindowSize-show-0-1-4"
+    class="container-0-2-1 fixed-0-2-2 show-0-2-4"
   >
     <div
-      class="WindowSize-nav-0-1-7 WindowSize-white-0-1-11"
+      class="nav-0-2-7 white-0-2-11"
     >
       <div
-        class="Grid-conFluid-0-1-22 WindowSize-grid-0-1-8"
+        class="conFluid-0-2-22 grid-0-2-8"
       >
         <div
-          class="Flexbox-flex-0-1-24 Flexbox-jbetween-0-1-36 Flexbox-acenter-0-1-41 WindowSize-tab-0-1-9"
+          class="flex-0-2-24 jbetween-0-2-36 acenter-0-2-41 tab-0-2-9"
         >
           <div
-            class="Flexbox-flex-0-1-24 Flexbox-acenter-0-1-41 WindowSize-left-0-1-12"
+            class="flex-0-2-24 acenter-0-2-41 left-0-2-12"
           >
             <div>
               <p
-                class="Text-text-0-1-56 Text-headline-0-1-58 Text-highEmphasis-0-1-76"
+                class="text-0-2-56 headline-0-2-58 highEmphasis-0-2-77"
               >
                 <a
                   href="/"
@@ -35,14 +35,14 @@ exports[`Header Matches snapshot 1`] = `
             style="flex: 1;"
           />
           <div
-            class="Flexbox-flex-0-1-24 Flexbox-acenter-0-1-41 WindowSize-right-0-1-13"
+            class="flex-0-2-24 acenter-0-2-41 right-0-2-13"
           >
             <a
-              class="NavItem-link-0-1-96 WindowSize-navItem-0-1-16"
+              class="link-0-2-97 navItem-0-2-16"
               href="https://github.com/occmundial/atomic-icons"
             >
               <span
-                class="Text-text-0-1-56 Text-standard-0-1-63 Text-highEmphasis-0-1-76 NavItem-text-0-1-97"
+                class="text-0-2-56 standard-0-2-63 highEmphasis-0-2-77 text-0-2-98"
               >
                 Github
               </span>
