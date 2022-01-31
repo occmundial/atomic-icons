@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/occmundial/atomic-icons/compare/v1.1.0...v1.1.1) (2022-01-31)
+
+
+### Bug Fixes
+
+* Fix building-o and minus-circle icons ([c6cafdb](https://github.com/occmundial/atomic-icons/commit/c6cafdb9a1f832a0610476d797705f8658f7f5a4))
+
 # [1.1.0](https://github.com/occmundial/atomic-icons/compare/v1.0.0...v1.1.0) (2022-01-26)
 
 
