@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/occmundial/atomic-icons/compare/v1.1.1...v1.2.0) (2022-05-04)
+
+
+### Features
+
+* Add youtube solid icon ([c8f20d9](https://github.com/occmundial/atomic-icons/commit/c8f20d9fcc8f890041db9bf4c077891d6e4a6298))
+
 ## [1.1.1](https://github.com/occmundial/atomic-icons/compare/v1.1.0...v1.1.1) (2022-01-31)
 
 
