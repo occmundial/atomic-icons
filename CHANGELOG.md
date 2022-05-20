@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/occmundial/atomic-icons/compare/v1.2.0...v1.3.0) (2022-05-20)
+
+
+### Bug Fixes
+
+* Fix svg fill properties ([f14d4e6](https://github.com/occmundial/atomic-icons/commit/f14d4e67ecdee8d25ffb806d9a217f2a5e955e56))
+
+
+### Features
+
+* Add bullet icon ([65b55c1](https://github.com/occmundial/atomic-icons/commit/65b55c1c0bf53e88675b355baa23c132f6377410))
+
 # [1.2.0](https://github.com/occmundial/atomic-icons/compare/v1.1.1...v1.2.0) (2022-05-04)
 
 
