@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/occmundial/atomic-icons/compare/v1.3.0...v1.4.0) (2022-09-13)
+
+
+### Features
+
+* Add icon match job small ([0cfd2ff](https://github.com/occmundial/atomic-icons/commit/0cfd2ff7fd9068a06783a6885a4e35b11ee951f6))
+
 # [1.3.0](https://github.com/occmundial/atomic-icons/compare/v1.2.0...v1.3.0) (2022-05-20)
 
 
