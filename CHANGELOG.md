@@ -1,3 +1,15 @@
+# [1.5.0](https://github.com/occmundial/atomic-icons/compare/v1.4.0...v1.5.0) (2022-09-15)
+
+
+### Bug Fixes
+
+* Delete wrong icon match-job-s ([35bc244](https://github.com/occmundial/atomic-icons/commit/35bc244403dfaa384d0f4ea316b85a6333a982cf))
+
+
+### Features
+
+* Update match-job icon ([0275540](https://github.com/occmundial/atomic-icons/commit/027554092e83a4625f5903b8cbc59bd587d8c08b))
+
 # [1.4.0](https://github.com/occmundial/atomic-icons/compare/v1.3.0...v1.4.0) (2022-09-13)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "atomic-icons",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_OPTIONS='--inspect' next dev -p 3002",
