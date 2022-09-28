@@ -10,7 +10,8 @@ const s3 = new AWS.S3({ apiVersion: '2006-03-01' })
 const uploadParams: PutObjectRequest = {
   Bucket: 'cdn-icons-occ',
   Key: '',
-  CacheControl: 'max-age=2592000'
+  CacheControl: 'max-age=2592000',
+  ContentType: 'image/svg+xml'
 }
 
 const fileStream = fs.createReadStream(
