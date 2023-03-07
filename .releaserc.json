@@ -10,6 +10,12 @@
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     [
+      "@semantic-release/npm",
+      {
+        "pkgRoot": "dist"
+      }
+    ],
+    [
       "@semantic-release/github",
       {
         "assets": [
@@ -20,7 +26,7 @@
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "npx rjp package.json version ${nextRelease.version} && npx ts-node --project tsconfig.ci.json scripts/saveVersion.ts ${nextRelease.version}",
+        "prepareCmd": "npx rjp package.json version ${nextRelease.version} && npx ts-node --project tsconfig.ci.json scripts/saveVersion.ts ${nextRelease.version} && npx ts-node --project tsconfig.ci.json scripts/setPackage.ts",
         "publishCmd": "npx ts-node --project tsconfig.ci.json scripts/uploadSprite.ts ${nextRelease.version}"
       }
     ],
