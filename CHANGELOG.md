@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/occmundial/atomic-icons/compare/v1.5.0...v1.5.1) (2023-03-07)
+
+
+### Bug Fixes
+
+* Update package.json ([4f68824](https://github.com/occmundial/atomic-icons/commit/4f68824ea67ad386a79e9e4bae1c66eaf05d8124))
+
 # [1.5.0](https://github.com/occmundial/atomic-icons/compare/v1.4.0...v1.5.0) (2022-09-15)
 
 
