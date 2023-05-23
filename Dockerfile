@@ -1,6 +1,8 @@
 # Use the official Node.js 16.x image as the base image
 FROM node:16
 
+RUN mkdir public
+
 # Set the working directory inside the container
 WORKDIR /app
 
@@ -16,6 +18,7 @@ COPY . .
 # Build the project
 RUN yarn build:sprite
 
+# Copy the sprite generated to public
 RUN cp /app/dist/atomic-icons.svg /app/public/atomic-icons.svg 
 
 # Expose the port on which the application will run
