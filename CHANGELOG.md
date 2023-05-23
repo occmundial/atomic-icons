@@ -1,3 +1,15 @@
+# [1.6.0](https://github.com/occmundial/atomic-icons/compare/v1.5.1...v1.6.0) (2023-05-23)
+
+
+### Bug Fixes
+
+* modify Dockerfile ([de0f4b3](https://github.com/occmundial/atomic-icons/commit/de0f4b3bc17d987392abb55e581c96aa2b3f1f31))
+
+
+### Features
+
+* Docker for local and fix sprite generator for local ([4a0d5f1](https://github.com/occmundial/atomic-icons/commit/4a0d5f1a0f45535f0eb6c01db860d9ca48bea288))
+
 ## [1.5.1](https://github.com/occmundial/atomic-icons/compare/v1.5.0...v1.5.1) (2023-03-07)
 
 
