@@ -1,8 +1,6 @@
 # Use the official Node.js 16.x image as the base image
 FROM node:16
 
-RUN mkdir public
-
 # Set the working directory inside the container
 WORKDIR /app
 
@@ -14,6 +12,8 @@ RUN yarn install
 
 # Copy the project files to the working directory
 COPY . .
+
+RUN mkdir public
 
 # Build the project
 RUN yarn build:sprite
