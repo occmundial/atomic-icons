@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <AtomicProvider
         data={{
-          iconsUrl: `https://cdn-icons.occ.com.mx/atomic-icons-${process.env.NEXT_PUBLIC_VERSION}.svg`
+          iconsUrl: `/atomic-icons.svg`
         }}
       >
         <Component {...pageProps} />
