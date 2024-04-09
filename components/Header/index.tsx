@@ -26,5 +26,6 @@ const right: NavPosition = [
 ]
 
 export default function Header() {
-  return <NavTab left={left} right={right} fixed />
+  const isMobile = false
+  return <NavTab left={left} right={right} fixed isFluid={isMobile} />
 }
