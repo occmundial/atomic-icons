@@ -1,3 +1,10 @@
+# [1.7.0-beta.2](https://github.com/occmundial/atomic-icons/compare/v1.7.0-beta.1...v1.7.0-beta.2) (2024-04-11)
+
+
+### Bug Fixes
+
+* Change phone/mobile icons ([dcb5465](https://github.com/occmundial/atomic-icons/commit/dcb546591791587efefc886c870ae950706838b0))
+
 # [1.7.0-beta.1](https://github.com/occmundial/atomic-icons/compare/v1.6.0...v1.7.0-beta.1) (2024-04-11)
 
 
