@@ -1,3 +1,33 @@
+# [1.7.0-beta.1](https://github.com/occmundial/atomic-icons/compare/v1.6.0...v1.7.0-beta.1) (2024-04-11)
+
+
+### Features
+
+* Add arrows icons ([a5332fb](https://github.com/occmundial/atomic-icons/commit/a5332fbefe29499c70642718fe67a3fdb538dd91))
+* Add box arrow icons ([d2121db](https://github.com/occmundial/atomic-icons/commit/d2121db7a1228f8a44924ffcfa015b73544fa0b7))
+* Add buildings icons ([698e334](https://github.com/occmundial/atomic-icons/commit/698e334e7ef07968752caa23d609bb94ca83f61e))
+* Add chevron icons ([6b0fa28](https://github.com/occmundial/atomic-icons/commit/6b0fa286bd9187e873c4dfb1e922aa288f873df2))
+* Add commerce icons ([9372077](https://github.com/occmundial/atomic-icons/commit/937207748aefda6100a25cdde2943cb22c0942d7))
+* Add communication icons ([f924754](https://github.com/occmundial/atomic-icons/commit/f924754551f8d7c406f839281c48ac90b82ae3a4))
+* Add controls icons ([729e34b](https://github.com/occmundial/atomic-icons/commit/729e34bb181864abe4d9900992d34baedbf92366))
+* Add devices icons ([5328fa5](https://github.com/occmundial/atomic-icons/commit/5328fa5b2464dd73ab67df6a638fbf11bbf9f66d))
+* Add emoji icons ([ee3feb4](https://github.com/occmundial/atomic-icons/commit/ee3feb4e1ed97bb24ee5d737ce93da75bb2f4290))
+* Add files folders icons ([5c4c365](https://github.com/occmundial/atomic-icons/commit/5c4c365738a62028cfc90276c03cb315973ca1a6))
+* Add hands icons ([4717086](https://github.com/occmundial/atomic-icons/commit/47170865c9cc35d58b5ec2da9db859f1012db3f3))
+* Add layout icons ([6f00a99](https://github.com/occmundial/atomic-icons/commit/6f00a9948bd570bf4ddcb114890e4a6ed5083d84))
+* Add miscelaneous icons ([a39ff39](https://github.com/occmundial/atomic-icons/commit/a39ff3937a6e8dae68c92d5bb702db84c52ef225))
+* Add people icons ([e8c8141](https://github.com/occmundial/atomic-icons/commit/e8c8141329a905dd0482b03f2404c6ecab1670ef))
+* Add real world icons ([70cfbf3](https://github.com/occmundial/atomic-icons/commit/70cfbf3e920e350fe811aca3b040993e4b14f161))
+* Add security icons ([cbc14ca](https://github.com/occmundial/atomic-icons/commit/cbc14ca333c8d64cfc4c4733040a3f4e9de4be75))
+* Add social icons ([9d4749b](https://github.com/occmundial/atomic-icons/commit/9d4749b5fd197d66d754b572af8814d30b56d582))
+* Add sort and filter icons ([283fc55](https://github.com/occmundial/atomic-icons/commit/283fc550409b74e8b190b997937023ad887aef00))
+* Add symbols icons ([90a89eb](https://github.com/occmundial/atomic-icons/commit/90a89eb35e08c213b23a240c9fbd33e8acb8b14c))
+* Add time icons ([b1e473a](https://github.com/occmundial/atomic-icons/commit/b1e473afa6146a1f04a13319f8e0b790f76528a5))
+* Add tools icons ([e01bf0b](https://github.com/occmundial/atomic-icons/commit/e01bf0b30795f65714e83c82770c3e1d6af9c230))
+* Add typography icons ([8b38022](https://github.com/occmundial/atomic-icons/commit/8b380224da491671afc51f27270fb7793176a225))
+* Add weather icons ([3451376](https://github.com/occmundial/atomic-icons/commit/3451376c6afb46d37ca508a552bf8558e88e707a))
+* Upgrade atomic ([f22c3a9](https://github.com/occmundial/atomic-icons/commit/f22c3a9c59dd34b5d8e3f078e352122bbda26e40))
+
 # [1.6.0](https://github.com/occmundial/atomic-icons/compare/v1.5.1...v1.6.0) (2023-05-23)
 
 
