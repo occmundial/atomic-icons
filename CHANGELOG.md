@@ -1,3 +1,10 @@
+# [1.7.0-beta.3](https://github.com/occmundial/atomic-icons/compare/v1.7.0-beta.2...v1.7.0-beta.3) (2024-04-11)
+
+
+### Bug Fixes
+
+* Change star icons names ([fa307ca](https://github.com/occmundial/atomic-icons/commit/fa307ca287f5e5ed912cce571b8b8d1ec495288b))
+
 # [1.7.0-beta.2](https://github.com/occmundial/atomic-icons/compare/v1.7.0-beta.1...v1.7.0-beta.2) (2024-04-11)
 
 
