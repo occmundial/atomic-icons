@@ -16,6 +16,9 @@
 /build
 /dist
 
+# development
+/public/atomic-icons.svg
+
 # misc
 .DS_Store
 *.pem
