@@ -1,3 +1,10 @@
+# [1.7.0-beta.6](https://github.com/occmundial/atomic-icons/compare/v1.7.0-beta.5...v1.7.0-beta.6) (2024-04-18)
+
+
+### Bug Fixes
+
+* Remove fill black in aistars icon elements ([b0cf997](https://github.com/occmundial/atomic-icons/commit/b0cf997b0a6b3ecc3770649e120269ba3ddee3d8))
+
 # [1.7.0-beta.5](https://github.com/occmundial/atomic-icons/compare/v1.7.0-beta.4...v1.7.0-beta.5) (2024-04-18)
 
 
