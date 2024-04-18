@@ -17,7 +17,8 @@ const uploadParams: PutObjectRequest = {
   Bucket: 'cdn-icons-occ',
   Key: '',
   CacheControl: 'max-age=2592000',
-  ContentType: 'image/svg+xml'
+  ContentType: 'image/svg+xml',
+  ACL: 'bucket-owner-full-control'
 }
 
 const fileStream = fs.createReadStream(
