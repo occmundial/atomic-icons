@@ -1,3 +1,10 @@
+# [1.7.0-beta.5](https://github.com/occmundial/atomic-icons/compare/v1.7.0-beta.4...v1.7.0-beta.5) (2024-04-18)
+
+
+### Bug Fixes
+
+* Remove fill of aistars icon ([2cf17c4](https://github.com/occmundial/atomic-icons/commit/2cf17c4502056dfd3db0aa528a6c7b5ed6ccb207))
+
 # [1.7.0-beta.4](https://github.com/occmundial/atomic-icons/compare/v1.7.0-beta.3...v1.7.0-beta.4) (2024-04-18)
 
 
