@@ -18,7 +18,7 @@ const uploadParams: PutObjectRequest = {
   Key: '',
   CacheControl: 'max-age=2592000',
   ContentType: 'image/svg+xml',
-  ACL: 'public-read'
+  ACL: 'bucket-owner-full-control'
 }
 
 const fileStream = fs.createReadStream(
