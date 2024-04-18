@@ -1,3 +1,10 @@
+# [1.7.0-beta.4](https://github.com/occmundial/atomic-icons/compare/v1.7.0-beta.3...v1.7.0-beta.4) (2024-04-18)
+
+
+### Bug Fixes
+
+* Remove fill property of tag icon ([e24823b](https://github.com/occmundial/atomic-icons/commit/e24823bca7be9fafbdcb7d26bd1470e4e1f93f75))
+
 # [1.7.0-beta.3](https://github.com/occmundial/atomic-icons/compare/v1.7.0-beta.2...v1.7.0-beta.3) (2024-04-11)
 
 
