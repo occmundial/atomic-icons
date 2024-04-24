@@ -95,7 +95,15 @@ export const iconGroups: IconGroup[] = [
       'chart',
       'code',
       'math',
-      'on-off'
+      'on-off',
+      'cards',
+      'copy',
+      'dark-light',
+      'go-to-direction',
+      'match-job',
+      'percent',
+      'pointer',
+      'refresh'
     ]
   },
   {
@@ -194,6 +202,7 @@ export const iconGroups: IconGroup[] = [
       'chat-text',
       'chat-quote',
       'chat-smile',
+      'end-chat',
       'bell',
       'bell-slash',
       'envelope',
@@ -221,7 +230,7 @@ export const iconGroups: IconGroup[] = [
   },
   {
     name: 'Security',
-    icons: ['lock', 'unlock', 'fingerprint']
+    icons: ['lock', 'unlock', 'fingerprint', 'security-check', 'verified-check']
   },
   {
     name: 'Commerce',
@@ -295,7 +304,7 @@ export const iconGroups: IconGroup[] = [
   },
   {
     name: 'Layout',
-    icons: ['columns', 'columns-gap', 'text-window', 'grid']
+    icons: ['columns', 'columns-gap', 'text-window', 'grid', 'add-section']
   },
   {
     name: 'Real World',
@@ -330,7 +339,8 @@ export const iconGroups: IconGroup[] = [
       'box',
       'pass',
       'rocket',
-      'newspaper'
+      'newspaper',
+      'note'
     ]
   },
   {
@@ -347,6 +357,14 @@ export const iconGroups: IconGroup[] = [
   },
   {
     name: 'Social',
-    icons: ['facebook', 'instagram', 'tiktok', 'linkedin']
+    icons: [
+      'facebook',
+      'instagram',
+      'tiktok',
+      'linkedin',
+      'twitter',
+      'youtube',
+      'skype'
+    ]
   }
 ]
