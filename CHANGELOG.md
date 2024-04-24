@@ -1,3 +1,10 @@
+# [1.7.0-beta.8](https://github.com/occmundial/atomic-icons/compare/v1.7.0-beta.7...v1.7.0-beta.8) (2024-04-24)
+
+
+### Features
+
+* Add app store and platform icons ([260f5b7](https://github.com/occmundial/atomic-icons/commit/260f5b7accb82fae4e3b26ed4ce702d053b31768))
+
 # [1.7.0-beta.7](https://github.com/occmundial/atomic-icons/compare/v1.7.0-beta.6...v1.7.0-beta.7) (2024-04-24)
 
 
