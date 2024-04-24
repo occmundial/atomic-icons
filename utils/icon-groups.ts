@@ -364,7 +364,13 @@ export const iconGroups: IconGroup[] = [
       'linkedin',
       'twitter',
       'youtube',
-      'skype'
+      'skype',
+      'whatsapp',
+      'spotify'
     ]
+  },
+  {
+    name: 'Platforms',
+    icons: ['android', 'apple', 'google-play', 'microsoft']
   }
 ]
