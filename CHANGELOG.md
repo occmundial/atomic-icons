@@ -1,3 +1,10 @@
+# [1.7.0-beta.7](https://github.com/occmundial/atomic-icons/compare/v1.7.0-beta.6...v1.7.0-beta.7) (2024-04-24)
+
+
+### Features
+
+* Add the last missing icons ([ecd2c62](https://github.com/occmundial/atomic-icons/commit/ecd2c62befcd55b924fe3fcaffb2033c8cd68498))
+
 # [1.7.0-beta.6](https://github.com/occmundial/atomic-icons/compare/v1.7.0-beta.5...v1.7.0-beta.6) (2024-04-18)
 
 
