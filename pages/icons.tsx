@@ -7,14 +7,8 @@ import Header from '@/components/Header'
 import IconBox from '@/components/IconBox'
 
 import { iconGroups } from 'utils/icon-groups'
-import { Fragment, useMemo } from 'react'
 
 export default function IconPage({ icons }) {
-  const legacyIcons = useMemo(() => {
-    return icons.filter(
-      icon => !iconGroups.some(group => group.icons.includes(icon))
-    )
-  }, [icons])
   return (
     <div>
       <Head>
@@ -38,16 +32,6 @@ export default function IconPage({ icons }) {
               </Flexbox>
             </div>
           ))}
-          <div>
-            <Text heading topBase>
-              Legacy icons
-            </Text>
-            <Flexbox display="flex" wrap="wrap" justifyContent="start">
-              {legacyIcons.map(icon => (
-                <IconBox key={icon} icon={icon} />
-              ))}
-            </Flexbox>
-          </div>
         </Card>
       </Grid>
     </div>
