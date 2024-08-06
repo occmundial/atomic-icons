@@ -256,6 +256,7 @@ export const iconGroups: IconGroup[] = [
       'cash',
       'cash-stack',
       'dollar',
+      'dollar-alt',
       'euro',
       'bitcoin',
       'exchange',
