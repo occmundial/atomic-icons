@@ -1,3 +1,10 @@
+# [1.7.0-beta.9](https://github.com/occmundial/atomic-icons/compare/v1.7.0-beta.8...v1.7.0-beta.9) (2024-08-07)
+
+
+### Features
+
+* Add dollar-alt icon ([82aa98f](https://github.com/occmundial/atomic-icons/commit/82aa98f57bd10b9e532d5eaf135b4ddc10564f94))
+
 # [1.7.0-beta.8](https://github.com/occmundial/atomic-icons/compare/v1.7.0-beta.7...v1.7.0-beta.8) (2024-04-24)
 
 
