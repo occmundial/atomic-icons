@@ -35,13 +35,13 @@ function makeSvgFont(fontName, svgs, svgFontPath) {
 }
 
 async function convertSvg2Ttf(svgFontPath, output) {
-  console.log('reading svg file')
+  console.log('rGenerating TTF file')
   var ttf = svg2ttf(await readFileAsync(svgFontPath, 'utf8'), {})
   await writeFileAsync(output, Buffer.from(ttf.buffer))
 }
 
 async function generateGlyphMap(svgFontPath, output) {
-  console.log('generating glyph map')
+  console.log('Generating glyph map')
   const parser = new xml2js.Parser()
   const glyphMap = {}
   const data = await readFileAsync(svgFontPath)
@@ -52,7 +52,7 @@ async function generateGlyphMap(svgFontPath, output) {
         reject(err)
       }
       if (!result) {
-        console.error(`cannot parse ${svgFontPath}`)
+        console.error(`Cannot parse ${svgFontPath}`)
       }
 
       const icons = result.svg.defs[0].font[0].glyph
@@ -83,7 +83,7 @@ async function main() {
     generateGlyphMap(svgFontPath, glyphMapPath),
     convertSvg2Ttf(svgFontPath, tffPath)
   ])
-  console.log(`updated: ${tffPath} and ${glyphMapPath}`)
+  console.log(`Updated: ${tffPath} and ${glyphMapPath}`)
 }
 
 main()
