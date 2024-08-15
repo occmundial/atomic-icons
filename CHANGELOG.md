@@ -1,3 +1,10 @@
+# [1.7.0-beta.11](https://github.com/occmundial/atomic-icons/compare/v1.7.0-beta.10...v1.7.0-beta.11) (2024-08-15)
+
+
+### Bug Fixes
+
+* Fix chanelog ([9f0a017](https://github.com/occmundial/atomic-icons/commit/9f0a017a8ea662c1c8ecab2852916a215a4e3204))
+
 # [1.7.0-beta.10](https://github.com/occmundial/atomic-icons/compare/v1.7.0-beta.9...v1.7.0-beta.10) (2024-08-15)
 
 
