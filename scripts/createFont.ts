@@ -35,7 +35,7 @@ function makeSvgFont(fontName, svgs, svgFontPath) {
 }
 
 async function convertSvg2Ttf(svgFontPath, output) {
-  console.log('rGenerating TTF file')
+  console.log('Generating TTF file')
   var ttf = svg2ttf(await readFileAsync(svgFontPath, 'utf8'), {})
   await writeFileAsync(output, Buffer.from(ttf.buffer))
 }
