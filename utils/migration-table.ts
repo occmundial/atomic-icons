@@ -1,6 +1,5 @@
 export const migrationTable: [string, string][] = [
   ['add-contact', 'person-add'],
-  ['aistars', 'stars'],
   ['attachment', 'paper-clip'],
   ['avatar', 'person'],
   ['birthday', 'gift'],
