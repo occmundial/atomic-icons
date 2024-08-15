@@ -16,7 +16,7 @@
     "build:sprite": "svg-sprite-generate -d ./icons -o ./dist/sprite.svg",
     "postbuild:sprite": "svgo dist/sprite.svg -o dist/atomic-icons.svg && rimraf dist/sprite.svg",
     "copy:svg": "cp dist/atomic-icons.svg public/atomic-icons.svg",
-    "font": "ts-node --project tsconfig.ci.json scripts/createFont.ts",
+    "build:font": "ts-node --project tsconfig.ci.json scripts/createFont.ts",
     "semantic-release": "semantic-release"
   },
   "dependencies": {
