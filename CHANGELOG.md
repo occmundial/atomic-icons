@@ -6,6 +6,14 @@
 * Change aistars icon ([4f2bb52](https://github.com/occmundial/atomic-icons/commit/4f2bb52e9ec564c554e70e8ae92a67aa65a364cb))
 * Generate font file and glyph map ([e5b18e2](https://github.com/occmundial/atomic-icons/commit/e5b18e2514d72485d6a3d699b11e79d991e05c3a))
 
+# [1.7.0-beta.10](https://github.com/occmundial/atomic-icons/compare/v1.7.0-beta.9...v1.7.0-beta.10) (2024-08-15)
+
+
+### Features
+
+* Change aistars icon ([4f2bb52](https://github.com/occmundial/atomic-icons/commit/4f2bb52e9ec564c554e70e8ae92a67aa65a364cb))
+* Generate font file and glyph map ([e5b18e2](https://github.com/occmundial/atomic-icons/commit/e5b18e2514d72485d6a3d699b11e79d991e05c3a))
+
 # [1.7.0-beta.9](https://github.com/occmundial/atomic-icons/compare/v1.7.0-beta.8...v1.7.0-beta.9) (2024-08-07)
 
 
