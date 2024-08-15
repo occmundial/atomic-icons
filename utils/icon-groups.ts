@@ -225,7 +225,8 @@ export const iconGroups: IconGroup[] = [
       'sun',
       'star-alt',
       'star',
-      'star-filled'
+      'star-filled',
+      'aistars'
     ]
   },
   {
