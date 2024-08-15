@@ -23,7 +23,9 @@
       "@semantic-release/github",
       {
         "assets": [
-          "dist/atomic-icons.svg"
+          "dist/atomic-icons.svg",
+          "dist/atomic-icons.ttf",
+          "dist/atomic-icons-map.json"
         ]
       }
     ],
