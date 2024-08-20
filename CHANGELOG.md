@@ -1,3 +1,10 @@
+# [1.7.0-beta.12](https://github.com/occmundial/atomic-icons/compare/v1.7.0-beta.11...v1.7.0-beta.12) (2024-08-20)
+
+
+### Bug Fixes
+
+* Fix malformed icons ([61d7e79](https://github.com/occmundial/atomic-icons/commit/61d7e79c8b50de2142fa78682f4c8ce954d893d1))
+
 # [1.7.0-beta.11](https://github.com/occmundial/atomic-icons/compare/v1.7.0-beta.10...v1.7.0-beta.11) (2024-08-15)
 
 
