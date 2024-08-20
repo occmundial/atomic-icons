@@ -4,8 +4,8 @@
   "license": "ISC",
   "private": true,
   "scripts": {
-    "dev": "concurrently 'cross-env NODE_OPTIONS='--inspect' next dev -p 3002' 'yarn watch'",
-    "watch": "watch 'yarn build:sprite && yarn copy:svg' ./icons",
+    "dev": "concurrently 'cross-env NODE_OPTIONS=\"--inspect --openssl-legacy-provider\" next dev -p 3002' 'yarn watch'",
+    "watch": "watch 'yarn build:sprite && yarn build:font && yarn copy-files' ./icons",
     "build": "next build",
     "start": "next start",
     "lint": "next lint --dir scripts --dir pages --dir components",
@@ -15,7 +15,7 @@
     "prebuild:sprite": "rimraf dist && mkdirp dist && npx ts-node --project tsconfig.ci.json scripts/setPackage.ts",
     "build:sprite": "svg-sprite-generate -d ./icons -o ./dist/sprite.svg",
     "postbuild:sprite": "svgo dist/sprite.svg -o dist/atomic-icons.svg && rimraf dist/sprite.svg",
-    "copy:svg": "cp dist/atomic-icons.svg public/atomic-icons.svg",
+    "copy-files": "cp dist/atomic-icons.svg public/atomic-icons.svg && cp dist/font/* public/fonts/",
     "build:font": "ts-node --project tsconfig.ci.json scripts/createFont.ts",
     "semantic-release": "semantic-release"
   },

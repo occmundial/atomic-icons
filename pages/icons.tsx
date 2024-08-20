@@ -5,7 +5,9 @@ import {
   Grid,
   Card,
   Flexbox,
-  TextField
+  TextField,
+  Pill,
+  SlideDown
 } from '@occmundial/atomic/components'
 import { spacing } from '@occmundial/atomic/tokens'
 
@@ -16,9 +18,11 @@ import { iconGroups } from 'utils/icon-groups'
 import { useMemo, useState } from 'react'
 import Row from '@occmundial/atomic/components/Grid/Row'
 import Col from '@occmundial/atomic/components/Grid/Col'
+import IconFont from '@/components/iconFont'
 
 export default function IconPage() {
   const [filter, setFilter] = useState('')
+  const [type, setType] = useState<'svg' | 'font'>('svg')
   const filteredIcons = useMemo(() => {
     return iconGroups
       .map(group => ({
@@ -52,18 +56,29 @@ export default function IconPage() {
                 onChange={setFilter}
                 style={{ marginBottom: spacing.base }}
               />
+              <Pill
+                group={[
+                  { id: 'svg', label: 'SVG' },
+                  { id: 'font', label: 'Font' }
+                ]}
+                selected={type}
+                onChange={(value: 'svg' | 'font') => setType(value)}
+              />
             </Col>
           </Row>
           {filteredIcons.map(group => (
             <div key={group.name}>
-              <Text heading topBase>
-                {group.name}
-              </Text>
-              <Flexbox display="flex" wrap="wrap" justifyContent="start">
-                {group.icons.map(icon => (
-                  <IconBox key={icon} icon={icon} />
-                ))}
-              </Flexbox>
+              <SlideDown title={group.name} expanded>
+                <Flexbox display="flex" wrap="wrap" justifyContent="start">
+                  {group.icons.map(icon =>
+                    type === 'svg' ? (
+                      <IconBox key={icon} icon={icon} />
+                    ) : (
+                      <IconFont key={icon} icon={icon} />
+                    )
+                  )}
+                </Flexbox>
+              </SlideDown>
             </div>
           ))}
         </Card>
