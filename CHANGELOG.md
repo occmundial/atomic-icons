@@ -1,3 +1,10 @@
+# [1.7.0-beta.13](https://github.com/occmundial/atomic-icons/compare/v1.7.0-beta.12...v1.7.0-beta.13) (2024-08-24)
+
+
+### Features
+
+* Add heart-filled icon ([4093559](https://github.com/occmundial/atomic-icons/commit/409355908bde655ae39841eedd2abecaad8faee1))
+
 # [1.7.0-beta.12](https://github.com/occmundial/atomic-icons/compare/v1.7.0-beta.11...v1.7.0-beta.12) (2024-08-20)
 
 
