@@ -46,7 +46,7 @@ class MyDocument extends Document {
           />
           <link
             rel="stylesheet"
-            href="https://cdn-h4.occ.com.mx/fonts/stylesheet.css"
+            href="https://cdn-h4.occ.com.mx/fonts/new-stylesheet.css"
           />
         </Head>
 
