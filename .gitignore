@@ -18,6 +18,7 @@
 
 # development
 /public/atomic-icons.svg
+/public/fonts/
 
 # misc
 .DS_Store
@@ -39,3 +40,5 @@ yarn-error.log*
 
 # VS Code
 .vscode
+
+.npmrc

@@ -88,6 +88,7 @@ export const iconGroups: IconGroup[] = [
       'view-list',
       'lightning-charge',
       'heart',
+      'heart-filled',
       'location',
       'chart-line-up',
       'filter-alt',
