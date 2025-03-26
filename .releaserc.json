@@ -1,6 +1,10 @@
 {
   "branches": [
-    "main"
+    "main",
+    {
+      "name": "beta",
+      "prerelease": true
+    }
   ],
   "dryRun": false,
   "ci": true,
@@ -19,7 +23,9 @@
       "@semantic-release/github",
       {
         "assets": [
-          "dist/atomic-icons.svg"
+          "dist/atomic-icons.svg",
+          "dist/atomic-icons.ttf",
+          "dist/atomic-icons-map.json"
         ]
       }
     ],

@@ -16,6 +16,10 @@
 /build
 /dist
 
+# development
+/public/atomic-icons.svg
+/public/fonts/
+
 # misc
 .DS_Store
 *.pem
@@ -36,3 +40,5 @@ yarn-error.log*
 
 # VS Code
 .vscode
+
+.npmrc

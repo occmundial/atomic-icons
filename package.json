@@ -1,10 +1,11 @@
 {
   "name": "@occmundial/atomic-icons",
-  "version": "1.6.0",
+  "version": "1.7.0-beta.13",
   "license": "ISC",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_OPTIONS='--inspect' next dev -p 3002",
+    "dev": "concurrently 'cross-env NODE_OPTIONS=\"--inspect --openssl-legacy-provider\" next dev -p 3002' 'yarn watch'",
+    "watch": "watch 'yarn build:sprite && yarn build:font && yarn copy-files' ./icons",
     "build": "next build",
     "start": "next start",
     "lint": "next lint --dir scripts --dir pages --dir components",
@@ -14,10 +15,12 @@
     "prebuild:sprite": "rimraf dist && mkdirp dist && npx ts-node --project tsconfig.ci.json scripts/setPackage.ts",
     "build:sprite": "svg-sprite-generate -d ./icons -o ./dist/sprite.svg",
     "postbuild:sprite": "svgo dist/sprite.svg -o dist/atomic-icons.svg && rimraf dist/sprite.svg",
+    "copy-files": "cp dist/atomic-icons.svg public/atomic-icons.svg && cp dist/font/* public/fonts/",
+    "build:font": "ts-node --project tsconfig.ci.json scripts/createFont.ts",
     "semantic-release": "semantic-release"
   },
   "dependencies": {
-    "@occmundial/atomic": "^1.19.0",
+    "@occmundial/atomic": "^3.0.0-beta.50",
     "next": "11.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -41,6 +44,7 @@
     "aws-sdk": "^2.1326.0",
     "axios": "^1.3.4",
     "babel-jest": "^27.0.6",
+    "concurrently": "^8.2.2",
     "cross-env": "^7.0.3",
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.3",
@@ -56,9 +60,12 @@
     "semantic-release": "^19.0.2",
     "semantic-release-slack-bot": "^3.5.3",
     "svg-sprite-generator": "^0.0.7",
+    "svg2ttf": "^6.0.3",
+    "svgicons2svgfont": "^10.0.6",
     "svgo": "^2.3.1",
     "ts-node": "^10.9.1",
     "typescript": "4.3.5",
+    "watch": "^1.0.2",
     "write": "^2.0.0"
   },
   "lint-staged": {
@@ -70,5 +77,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "volta": {
+    "node": "20.16.0"
   }
 }
