@@ -1,5 +1,5 @@
 {
-  "name": "@occmundial/atomic-icons",
+  "name": "@occmundial/atomic-icons-ct",
   "version": "1.7.0",
   "license": "ISC",
   "private": true,
@@ -14,8 +14,8 @@
     "pre-commit": "lint-staged",
     "prebuild:sprite": "rimraf dist && mkdirp dist && npx ts-node --project tsconfig.ci.json scripts/setPackage.ts",
     "build:sprite": "svg-sprite-generate -d ./icons -o ./dist/sprite.svg",
-    "postbuild:sprite": "svgo dist/sprite.svg -o dist/atomic-icons.svg && rimraf dist/sprite.svg",
-    "copy-files": "cp dist/atomic-icons.svg public/atomic-icons.svg && cp dist/font/* public/fonts/",
+    "postbuild:sprite": "svgo dist/sprite.svg -o dist/atomic-icons-ct.svg && rimraf dist/sprite.svg",
+    "copy-files": "cp dist/atomic-icons-ct.svg public/atomic-icons-ct.svg && cp dist/font/* public/fonts/",
     "build:font": "ts-node --project tsconfig.ci.json scripts/createFont.ts",
     "semantic-release": "semantic-release"
   },
@@ -73,7 +73,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/occmundial/atomic-icons.git"
+    "url": "https://github.com/occmundial/atomic-icons-ct.git"
   },
   "publishConfig": {
     "access": "public"

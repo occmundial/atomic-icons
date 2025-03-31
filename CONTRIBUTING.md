@@ -1,7 +1,7 @@
 # Contributing
 
 If you want to contribute to this project, you can do it in the following ways:
-- Report bugs or ask for new features in the [issue tracker](https://github.com/OCCMundial/atomic-icons/issues).
+- Report bugs or ask for new features in the [issue tracker](https://github.com/OCCMundial/atomic-icons-ct/issues).
 - Send pull requests.
 - Star the project.
 - Share the project with others.

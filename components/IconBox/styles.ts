@@ -10,9 +10,6 @@ const styles = createUseStyles({
     width: 150,
     '&:hover': {
       background: colors.bgGrey
-    },
-    '&:hover $icon': {
-      fill: colors.secDarker
     }
   },
   tag: {

@@ -19,7 +19,7 @@ RUN mkdir public
 RUN yarn build:sprite
 
 # Copy the sprite generated to public
-RUN cp /app/dist/atomic-icons.svg /app/public/atomic-icons.svg 
+RUN cp /app/dist/atomic-icons-ct.svg /app/public/atomic-icons-ct.svg 
 
 # Expose the port on which the application will run
 EXPOSE 3002

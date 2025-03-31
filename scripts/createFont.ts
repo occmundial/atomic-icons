@@ -71,7 +71,7 @@ async function generateGlyphMap(svgFontPath, output) {
 }
 
 async function main() {
-  const fontName = 'atomic-icons'
+  const fontName = 'atomic-icons-ct'
 
   const svgFontPath = `./dist/${fontName}.glyph.svg`
   const glyphMapPath = `./dist/font/${fontName}-map.json`

@@ -1,6 +1,6 @@
 version: '3'
 services:
-  atomic-icons:
+  atomic-icons-ct:
     build:
       context: .
       dockerfile: Dockerfile

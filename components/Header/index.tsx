@@ -34,7 +34,7 @@ const right: NavPosition = [
     key: '1',
     type: 'link',
     text: 'Github',
-    link: 'https://github.com/occmundial/atomic-icons'
+    link: 'https://github.com/occmundial/atomic-icons-ct'
   }
 ]
 

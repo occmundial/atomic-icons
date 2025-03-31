@@ -2,7 +2,7 @@ import { Tag, Flexbox } from '@occmundial/atomic/components'
 
 import useStyles from './styles'
 
-import glyphMap from '../../public/fonts/atomic-icons-map.json'
+import glyphMap from '../../public/fonts/atomic-icons-ct-map.json'
 
 function IconFont({ icon }) {
   const classes = useStyles()

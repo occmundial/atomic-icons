@@ -19,7 +19,7 @@ const styles = createUseStyles({
     marginTop: spacing.xTiny
   },
   icon: {
-    fontFamily: 'Atomic-Icons',
+    fontFamily: 'Atomic-Icons-Ct',
     fontSize: 48,
     lineHeight: 1,
     display: 'block',

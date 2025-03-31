@@ -22,11 +22,11 @@ const uploadParams: PutObjectRequest = {
 }
 
 const fileStream = fs.createReadStream(
-  path.join('.', 'dist', 'atomic-icons.svg')
+  path.join('.', 'dist', 'atomic-icons-ct.svg')
 )
 
 uploadParams.Body = fileStream
-uploadParams.Key = `atomic-icons-${version}.svg`
+uploadParams.Key = `atomic-icons-ct-${version}.svg`
 
 s3.upload(uploadParams, function (err, data) {
   if (err) {

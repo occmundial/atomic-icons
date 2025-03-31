@@ -1,5 +1,5 @@
 # Atomic Icons
-![Release](https://badge.fury.io/gh/occmundial%2Fatomic-icons.svg)
+![Release](https://badge.fury.io/gh/occmundial%2Fatomic-icons-ct.svg)
 
 **Atomic Icons** library. This project is part of the **Atomic UI**.
 
@@ -13,7 +13,7 @@ To use the icons, you need to insert an inline SVG element like this:
 
 If you're using the SVG sprite from a CDN, you have to include the path to the sprite file in the `xlink:href` attribute:
 ```svg
-<svg class="atomic-arrow-left"><use xlink:href="https://cdn-hosting-the-sprite.com/atomic-icons.svg#atomic-arrow-left"></use></svg>
+<svg class="atomic-arrow-left"><use xlink:href="https://cdn-hosting-the-sprite.com/atomic-icons-ct.svg#atomic-arrow-left"></use></svg>
 ```
 
 ### Using it with Atomic
