@@ -37,3 +37,23 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
         run: yarn semantic-release
+  
+  slack_notify_success:
+    needs: 
+      - ci
+    if: |
+      needs.ci.result == 'success'
+    uses: occmundial/ppr-gha-pipelines/.github/workflows/slack-notification-success.yaml@main
+    secrets:
+      SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+      SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
+
+  slack_notify_failed:
+    needs: 
+      - ci
+    if: |
+      always() && needs.ci.result == 'failure'
+    uses: occmundial/ppr-gha-pipelines/.github/workflows/slack-notification-failed.yaml@main
+    secrets:
+      SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+      SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
