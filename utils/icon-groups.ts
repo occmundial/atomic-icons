@@ -209,6 +209,7 @@ export const iconGroups: IconGroup[] = [
       'envelope',
       'envelope-open',
       'envelope-exclamation',
+      'envelope-forward',
       'globe',
       'search',
       'phone',
@@ -375,5 +376,9 @@ export const iconGroups: IconGroup[] = [
   {
     name: 'Platforms',
     icons: ['android', 'apple', 'google-play', 'microsoft']
+  },
+  {
+    name: 'Type vacancy',
+    icons: ['clasicc', 'outstanding', 'premium']
   }
 ]
