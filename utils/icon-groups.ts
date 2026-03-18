@@ -379,6 +379,6 @@ export const iconGroups: IconGroup[] = [
   },
   {
     name: 'Type vacancy',
-    icons: ['clasicc', 'outstanding', 'premium']
+    icons: ['classic', 'outstanding', 'premium']
   }
 ]
