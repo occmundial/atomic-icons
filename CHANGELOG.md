@@ -1,3 +1,12 @@
+# [1.8.0](https://github.com/occmundial/atomic-icons/compare/v1.7.0...v1.8.0) (2026-03-20)
+
+
+### Features
+
+* Add type vacancy icons ([6ced1b3](https://github.com/occmundial/atomic-icons/commit/6ced1b3427217c58e2ea51f2cd0e7a1b02c55892))
+* Rename icon ([f6b77d9](https://github.com/occmundial/atomic-icons/commit/f6b77d918e7c6e26d64e3931e8f2d5a58210c510))
+* Update name ([e6aee97](https://github.com/occmundial/atomic-icons/commit/e6aee976b866dea46c10a4f6727ea6c3afafc73e))
+
 # [1.7.0](https://github.com/occmundial/atomic-icons/compare/v1.6.0...v1.7.0) (2025-03-26)
 
 
