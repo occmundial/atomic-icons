@@ -378,7 +378,7 @@ export const iconGroups: IconGroup[] = [
     icons: ['android', 'apple', 'google-play', 'microsoft']
   },
   {
-    name: 'Type vacancy',
+    name: 'Vacancy',
     icons: ['classic', 'outstanding', 'premium']
   }
 ]
