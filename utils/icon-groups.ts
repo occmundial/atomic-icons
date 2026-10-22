@@ -91,6 +91,7 @@ export const iconGroups: IconGroup[] = [
       'heart-filled',
       'location',
       'chart-line-up',
+      'chart-line-down',
       'filter-alt',
       'menu',
       'chart',
@@ -146,7 +147,8 @@ export const iconGroups: IconGroup[] = [
       'person-v-card',
       'person-v-card-alt',
       'person-add-circle',
-      'people-circle'
+      'people-circle',
+      'customer'
     ]
   },
   {
