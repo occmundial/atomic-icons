@@ -9,7 +9,7 @@ exports[`Header Matches snapshot 1`] = `
       class="nav-0-2-7 white-0-2-11"
     >
       <div
-        class="conFluid-0-2-22 grid-0-2-8"
+        class="con-0-2-23 grid-0-2-8"
       >
         <div
           class="flex-0-2-24 jbetween-0-2-36 acenter-0-2-41 tab-0-2-9"
@@ -19,7 +19,8 @@ exports[`Header Matches snapshot 1`] = `
           >
             <div>
               <p
-                class="text-0-2-56 headline-0-2-58 highEmphasis-0-2-77"
+                class="text-0-2-56 h2-0-2-59 corpPrimary-0-2-85"
+                style="margin-right: 24px;"
               >
                 <a
                   href="/"
@@ -29,6 +30,26 @@ exports[`Header Matches snapshot 1`] = `
                 </a>
               </p>
             </div>
+            <a
+              class="link-0-2-117 navItem-0-2-16"
+              href="/icons"
+            >
+              <span
+                class="text-0-2-56 bodyRegular-0-2-68 corpPrimary-0-2-85 text-0-2-118"
+              >
+                Icons
+              </span>
+            </a>
+            <a
+              class="link-0-2-117 navItem-0-2-16"
+              href="/migration"
+            >
+              <span
+                class="text-0-2-56 bodyRegular-0-2-68 corpPrimary-0-2-85 text-0-2-118"
+              >
+                Migration
+              </span>
+            </a>
           </div>
           <div
             class=""
@@ -38,11 +59,11 @@ exports[`Header Matches snapshot 1`] = `
             class="flex-0-2-24 acenter-0-2-41 right-0-2-13"
           >
             <a
-              class="link-0-2-97 navItem-0-2-16"
+              class="link-0-2-117 navItem-0-2-16"
               href="https://github.com/occmundial/atomic-icons"
             >
               <span
-                class="text-0-2-56 standard-0-2-63 highEmphasis-0-2-77 text-0-2-98"
+                class="text-0-2-56 bodyRegular-0-2-68 corpPrimary-0-2-85 text-0-2-118"
               >
                 Github
               </span>
